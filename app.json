@@ -1,0 +1,27 @@
+{
+    "expo": {
+        "name": "MealSnap",
+        "slug": "mealsnap",
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "platforms": [
+            "ios",
+            "android"
+        ],
+        "sdkVersion": "50.0.0",
+        "ios": {
+            "supportsTablet": true,
+            "infoPlist": {
+                "NSPhotoLibraryUsageDescription": "MealSnap needs access to your photos to analyze meals.",
+                "NSCameraUsageDescription": "MealSnap needs access to the camera to capture meals."
+            }
+        },
+        "android": {},
+        "updates": {
+            "fallbackToCacheTimeout": 0
+        },
+        "assetBundlePatterns": [
+            "**/*"
+        ]
+    }
+}
