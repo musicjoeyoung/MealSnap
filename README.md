@@ -24,22 +24,25 @@ The app calls a backend endpoint at /analyze. This should be a Cloudflare Worker
 
 Update the base URL in src/services/aiService.ts.
 
+## Worker
+
+Backend source lives in worker/src/index.ts with wrangler.toml in worker/. Deploy it and point the mobile app to the Worker URL.
+
 ## JSON response shape expected from /analyze
 
 ```
 {
-	"mealTitle": "Chicken Bowl",
-	"notes": "Estimated values",
-	"aiDerived": true,
-	"items": [
-		{
-			"name": "Grilled chicken",
-			"portion": "150 g",
-			"macros": { "calories": 250, "protein": 35, "carbs": 0, "fat": 8 },
-			"ingredients": [{ "name": "Chicken breast", "amount": 150, "unit": "g" }],
-			"confidence": { "low": 0.55, "high": 0.8 }
-		}
-	]
+  "mealTitle": "Chicken Bowl",
+  "notes": "Estimated values",
+  "aiDerived": true,
+  "items": [
+    {
+      "name": "Grilled chicken",
+      "portion": "150 g",
+      "macros": { "calories": 250, "protein": 35, "carbs": 0, "fat": 8 },
+      "ingredients": [{ "name": "Chicken breast", "amount": 150, "unit": "g" }],
+      "confidence": { "low": 0.55, "high": 0.8 }
+    }
+  ]
 }
 ```
-# MealSnap

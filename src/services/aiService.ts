@@ -1,4 +1,5 @@
 import { DraftIngredient, DraftMealEntry, DraftMealItem } from '../models/meal';
+
 import { generateId } from './id';
 
 export type AIAnalysisResult = {

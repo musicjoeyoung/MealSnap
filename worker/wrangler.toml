@@ -1,0 +1,6 @@
+name = "mealsnap-ai"
+main = "src/index.ts"
+compatibility_date = "2025-01-15"
+
+[ai]
+binding = "AI"
